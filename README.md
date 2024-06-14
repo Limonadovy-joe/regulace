@@ -1,4 +1,8 @@
 # Regulace
+- Regulace je proces automatického udržování určité veličiny **(regulovaná veličina)** na stanovené hodnotě nebo hodnotách **(referenční nebo požadovaná hodnota)**.
+- Protože regulace **působí proti odchylce od požadované hodnoty**, jedná se o **zápornou zpětnou vazbu.**
+- Zejména větší **poruchy obvykle způsobí viditelnou odchylku** regulované veličiny, která se jen pomalu zmenšuje, někdy s kolísáním okolo požadované hodnoty
+
 - [Definice](#definice)
 - [Regulovana velicina](#regulovana-velicina)
 - [Referencni hodnota](#referencni-hodnota)
@@ -9,15 +13,11 @@
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
 
 # Teorie rizeni
+
+- 
+
 - [Prekmit](#prekmit)
 
-
-
-## Definice
-- Regulace je proces automatického udržování určité veličiny **(regulovaná veličina)** na stanovené hodnotě nebo hodnotách **(referenční nebo požadovaná hodnota)**.
-- Protože regulace **působí proti odchylce od požadované hodnoty**, jedná se o **zápornou zpětnou vazbu.**
-- Zejména větší **poruchy obvykle způsobí viditelnou odchylku** regulované veličiny, která se jen pomalu zmenšuje, někdy s kolísáním okolo požadované hodnoty 
-- 
 
 ## Regulovana velicina
 - In **control theory**, a process variable (**PV**; also process value or process parameter) **is the current measured value** of a particular part of a process which is being **monitored or controlled**. An example of this would be the temperature of a furnace.
