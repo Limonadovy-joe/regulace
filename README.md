@@ -2,6 +2,11 @@
 - [Definice](#definice)
 - [Regulovana velicina](#regulovana-velicina)
 - [Referencni hodnota](#referencni-hodnota)
+- [Closed-loop controller](#closed-loop-controller)
+- [Open-loop controller](#open-loop-controller)
+- [Kladna zpetna vazba](#kladna-zpetna-vazba)
+- [Zaporna zpetna vazba](#zaporna-zpetna-vazba)
+- [Omezení zpětné vazby](#Omezení-zpětné-vazby)
 
 # Teorie rizeni
 - [Prekmit](#prekmit)
@@ -29,7 +34,7 @@
 ![current](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Set-point_control-cs.svg/885px-Set-point_control-cs.svg.png)
 - Blokový diagram systému se **zápornou zpětnou vazbou**, který slouží pro udržování požadované hodnoty regulované veličiny řízeného systému ovlivňovaného poruchami pomocí **chybou řízené regulace**.
 - **Kladná regulační odchylka znamená, že zpětná vazba je příliš malá (je nutné zvýšení akční veličiny)**;
-- **Záporná odchylka znamená, že zpětná vazba je příliš velká (je nutné snížení akční veličiny).**
+- **Záporná regulační odchylka znamená, že zpětná vazba je příliš velká (je nutné snížení akční veličiny).**
 
 
 ## Referencni hodnota
@@ -42,6 +47,40 @@
 - The PID controller uses this **error signal** to determine how to **adjust the control output to bring the process variable as close as possible to the setpoint** while **maintaining stability and minimizing overshoot(prekmit)**.
 
 - **Departure(odchylka) of such a variable from its setpoint** is one basis for error-controlled regulation using negative feedback for automatic control
+
+
+## Closed-loop controller
+- closed-loop controller or **feedback controller** is a control loop which incorporates feedback, in contrast to an open-loop controller or non-feedback controller.
+- **uses feedback to control states or outputs of a dynamical system.**
+- **process inputs (e.g. voltage applied to an electric motor)** have an effect on the process outputs **(e.g., speed or torque of the motor)**, which is measured with sensors and processed by the controller; **the result (the control signal) is "fed back" as input to the process, closing the loop**
+- **Open-loop control systems** do not make use of feedback, and run only in pre-arranged ways.
+
+## Open-loop controller
+- non-feedback controller, is a control loop part of a control system in which the **control action is independent of the "process output"**, **which is the process variable that is being controlled.**
+- It does not use **feedback to determine if its output has achieved the desired goal of the input command or process setpoint.**
+
+## Kladna zpetna vazba
+- Kladná zpětná vazba nastává, **když systém reaguje na regulační odchylku způsobem, který tuto odchylku zvětšuje.**
+- Pokud zvýšení hodnoty, přiváděné z výstupu na vstup, způsobí další zvýšení hodnoty na výstupu, jedná se o kladnou zpětnou vazbu.
+- Kladná zpětná vazba se obvykle využívá **k zesílení nebo k akceleraci žádoucích jevů.** 
+- **Akustická zpětná vazba**
+  -  je zvláštní druh kladné zpětné vazby, ke kterému dochází, pokud **existuje zvuková smyčka mezi zvukovým vstupem (například mikrofonem nebo kytarovým snímačem) a zvukovým výstupem (například reproduktorem).**
+  -  je signál zachycený mikrofonem zesílen(zesilovacem) a vyzářen reproduktorem.
+ 
+## Zaporna zpetna vazba
+- Záporná zpětná vazba nastává, **když systém reaguje na regulační odchylku způsobem, který tuto odchylku zmenšuje.**
+- Pokud zvýšení hodnoty, přiváděné z výstupu na vstup, způsobí snížení hodnoty na výstupu, jedná se o zápornou zpětnou vazbu.
+- Tento druh vazby se využívá v regulační technice pro udržení stálých parametrů systémů, neboť v případě výskytu výchylky (regulační odchylky) od ustáleného stavu dokáže zpětná vazba působit proti této výchylce a potlačit ji.
+
+## Omezení zpětné vazby
+V reálném světě průběh veličin, které jsou regulovany pomoci zpětné vazby,bude omezen ve své:
+- **plynulosti**
+  - exponenciální průběh je ideálním případem, kdy se zpoždění jednotlivých iterací limitně blíží k nule.
+  - **Místo hladké exponenciely bude reálný průběh více „schodovitý“** (každý schod na grafu bude představovat jednu iteraci), avšak přesto bude mít exponenciální charakter.
+- **konečnosti**
+  - u záporné zpětné vazby dříve či později dojde **k setření rozdílu mezi ještě klesající veličinou a její nulovou hodnotou**.
+  - Systém je navržen tak, aby s časem odchylku úplně eliminovat, tedy aby **aktuální hodnota veličiny konvergovala k požadované hodnotě.**
+  - U kladné zpětné vazby se exponenciálně rostoucí veličina musí dříve či **později střetnout s některou z mezí systému.**
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
