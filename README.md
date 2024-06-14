@@ -73,6 +73,10 @@
 - Tento druh vazby se využívá v regulační technice pro udržení stálých parametrů systémů, neboť v případě výskytu výchylky (regulační odchylky) od ustáleného stavu dokáže zpětná vazba působit proti této výchylce a potlačit ji.
 
 ## Omezení zpětné vazby
+- výstup procesu, který je ovlivněn zpětnou vazbou, **působí v každé iteraci na jeho vstup**, naznačuje, že celkový **stav zpětnovazební veličiny se bude zvyšovat nebo snižovat geometrickou řadou**, čili bude mít exponenciální průběh.
+- Geometrická posloupnost je druh matematické posloupnosti, kde každý člen kromě prvního je **stálým násobkem předchozího členu**. Tento násobek se nazývá **kvocient geometrické posloupnosti**
+- Geometrickou posloupnost s nezápornými členy lze chápat jako **zúžení exponenciální funkce na obor přirozených čísel**
+
 V reálném světě průběh veličin, které jsou regulovany pomoci zpětné vazby,bude omezen ve své:
 - **plynulosti**
   - exponenciální průběh je ideálním případem, kdy se zpoždění jednotlivých iterací limitně blíží k nule.
