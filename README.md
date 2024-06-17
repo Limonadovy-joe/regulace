@@ -12,19 +12,27 @@
 - [Zaporna zpetna vazba](#zaporna-zpetna-vazba)
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
 
+
 # Teorie rizeni
 -  Základní dělení je na klasickou **teorii řízení** a na **moderní teorii řízení.**
-  -  Klasicka teorie rizeni je založena na **vnějším popisu systémů.**
-  -  tento přístup se soustředí na vztahy **mezi vstupními a výstupními signály** a často využívá **přenosovou funkci nebo impulzní odezvu k charakterizaci systému.**
-  -  tento přístup je vhodný, když není možné nebo **praktické studovat vnitřní fungování systému.**
-  -  **Vlastnosti vnějšího popisu systému**
-    - s   
-
+    -  Klasicka teorie rizeni je založena na **vnějším popisu systémů.**
+    -  tento přístup se soustředí na vztahy **mezi vstupními a výstupními signály** a často využívá **přenosovou funkci nebo impulzní odezvu k charakterizaci systému.**
+    -  tento přístup je vhodný, když není možné nebo **praktické studovat vnitřní fungování systému.**
+    -  **Vlastnosti vnějšího popisu systému:**
+        - **Zaměření na vstupy a výstupy**: Vnější popis systému analyzuje, jak systém reaguje na **různé vstupní signály, a jaké výstupní signály produkuje.**  
+        - **Použití matematických nástrojů**: Často se používají matematické nástroje jako **Laplaceova transformace, Z-transformace, přenosové funkce a impulzní odezvy k modelování a analýze systému.**
+        
+-  **Moderní teorii řízení**
+    - vznikla v 60. letech, odlišuje se od „klasické teorie, je založena na **stavovém popisu systemu**
+    - současné době se oba způsoby popisu silně prolínají a oba se používají při návrhu regulátorů
+    - Moderní teorie řízení chápe návrh regulátoru jako **optimalizační úlohu.**
 
 - [Klasicka teorie rizeni](#klasicka-teorie-rizeni)
   - [Prenosova funkce](#prenosova-funkce)
   - [Frekvenční charakteristika](#frekvenční-charakteristika)
   - [Impulsní charakteristika](#impulsní-charakteristika)
+  - [Přechodová charakteristika](#přechodová-charakteristika)
+  - [Diferenciální rovnice](#diferenciální-rovnice)
 
 - [Prekmit](#prekmit)
 
