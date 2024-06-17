@@ -13,8 +13,18 @@
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
 
 # Teorie rizeni
+-  Základní dělení je na klasickou **teorii řízení** a na **moderní teorii řízení.**
+  -  Klasicka teorie rizeni je založena na **vnějším popisu systémů.**
+  -  tento přístup se soustředí na vztahy **mezi vstupními a výstupními signály** a často využívá **přenosovou funkci nebo impulzní odezvu k charakterizaci systému.**
+  -  tento přístup je vhodný, když není možné nebo **praktické studovat vnitřní fungování systému.**
+  -  **Vlastnosti vnějšího popisu systému**
+    - s   
 
-- 
+
+- [Klasicka teorie rizeni](#klasicka-teorie-rizeni)
+  - [Prenosova funkce](#prenosova-funkce)
+  - [Frekvenční charakteristika](#frekvenční-charakteristika)
+  - [Impulsní charakteristika](#impulsní-charakteristika)
 
 - [Prekmit](#prekmit)
 
