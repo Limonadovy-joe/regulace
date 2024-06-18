@@ -34,6 +34,15 @@
   - [Přechodová charakteristika](#přechodová-charakteristika)
   - [Diferenciální rovnice](#diferenciální-rovnice)
 
+
+- [Moderni teorie rizeni](#moderni-teorie-rizeni)
+  - [Optimalizacni uloha](#optimalizacni-uloha)
+      - [Ucelova funkce](#ucelova-funkce) 
+  - [Stavovy popis systemu](#stavovy-popis-systemu)
+      - [Prvni stavova rovnice](#prvni-stavova-rovnice)
+  
+
+
 - [Prekmit](#prekmit)
 
 
