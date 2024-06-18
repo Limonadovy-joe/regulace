@@ -12,6 +12,8 @@
 - [Zaporna zpetna vazba](#zaporna-zpetna-vazba)
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
 
+- [Prekmit](#prekmit)
+
 
 # Teorie rizeni
 -  Základní dělení je na klasickou **teorii řízení** a na **moderní teorii řízení.**
@@ -43,7 +45,7 @@
   
 
 
-- [Prekmit](#prekmit)
+
 
 
 ## Regulovana velicina
@@ -114,6 +116,24 @@ V reálném světě průběh veličin, které jsou regulovany pomoci zpětné va
   - U kladné zpětné vazby se exponenciálně rostoucí veličina musí dříve či **později střetnout s některou z mezí systému.**
 
 
+
+## Prekmit
+- **overshoot**
+ - dočasné překročení požadované hodnoty (referencni hodnoty) výstupní veličiny regulovaného systému **během přechodového děje**
+- Překmity jsou často nežádoucí, protože mohou způsobit nestabilitu nebo snížit přesnost systému.
+- V oblasti automatizace a regulace systémů jsou **překmity důležité pro charakterizaci přechodového procesu.**
+- **Přechodový proces,dej** se měří pomocí **přechodové charakteristiky**. Přechodová charakteristika popisuje, jak se **výstup systému mění v čase v reakci na krokovou změnu vstupu -  náhlou změnu vstupní veličiny z jedné konstantní hodnoty na jinou.**
+- Vyjádřený procentuálně – **relativní překmit κ,** také **přeregulování**, je maximální hodnota minus ustálená hodnota vydělená ustálenou hodnotou
+
+- **Dynamická Odezva**
+    - Překmit se objevuje během dynamické odezvy systému, kdy dochází k **přechodu ze stavu mimo rovnováhu do nového ustáleného stavu.**
+- **Druhého Řádu:**
+    - **V lineárních systémech druhého řádu** je překmit často analyzován pomocí **přenosové funkce a charakteristických kořenů (pólů) systému**. Překmit závisí na parametrech, jako je **tlumící faktor (ζζ) a přirozená frekvence (ωnωn​).**
+- **Přenosová Funkce:**
+    - **U lineárních časově invariantních (LTI) systémů** je přenosová funkce **G(s)** často analyzována pro určení překmitu pomocí **inverzní Laplaceovy transformace.**
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -123,9 +143,6 @@ V reálném světě průběh veličin, které jsou regulovany pomoci zpětné va
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-## Prekmit
-- a 
 
 
 
