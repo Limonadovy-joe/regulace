@@ -13,6 +13,7 @@
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
 
 - [Prekmit](#prekmit)
+    - [Co zpusobuje prekmit](#co-zpusobuje-prekmit) 
 
 
 # Teorie rizeni
@@ -131,6 +132,22 @@ V reálném světě průběh veličin, které jsou regulovany pomoci zpětné va
     - **V lineárních systémech druhého řádu** je překmit často analyzován pomocí **přenosové funkce a charakteristických kořenů (pólů) systému**. Překmit závisí na parametrech, jako je **tlumící faktor (ζζ) a přirozená frekvence (ωnωn​).**
 - **Přenosová Funkce:**
     - **U lineárních časově invariantních (LTI) systémů** je přenosová funkce **G(s)** často analyzována pro určení překmitu pomocí **inverzní Laplaceovy transformace.**
+ 
+### Co zpusobuje prekmit
+- Překmit u PID regulátoru je jev, kdy **výstup systému překročí svou požadovanou hodnotu (nastavenou hodnotu) a následně se vrací zpět.**
+
+- **Vysoká proporční složka (Kp)**:
+    - Tato složka je **přímo úměrná chybě a její účinek je řízen konstantou Kp.**
+    - Proporční složka PID regulátoru **reaguje přímo úměrně k chybě (rozdíl mezi požadovanou a aktuální hodnotou)**. Pokud je hodnota Kp​ příliš vysoká, regulátor bude **reagovat příliš agresivně na chybu**, což způsobí rychlé změny ve výstupu a může vést k překmitům.
+    - Kvůli rychlé reakci na chybu může vysoké Kp​ způsobit **oscilace okolo požadované hodnoty**. Tyto oscilace jsou důsledkem toho, že systém je příliš citlivý
+
+- **Příliš nízká nebo vysoká integrační složka (Ki):**
+    - Integrační složka se snaží **eliminovat ustálenou chybu tím, že kumuluje chybu v čase.** Pokud je hodnota **Ki​ příliš vysoká, regulační akce se může stát příliš silnou - jak často a jak silně se bude akcni clen (např. topení) spouštět v závislosti na kumulaci chyby v čase** a může způsobit překmit. Na druhé straně, pokud je Ki​ příliš nízká, systém může **být pomalý a nebude dostatečně reagovat na změny.**
+    - **V diskrétním čase (kde počítáme hodnoty v konkrétních časových krocích, posloupnost)** se to vyjadřuje jako suma. napr Uvažujme regulátor, který **vzorkuje chybu každou sekundu (Δt=1s):**
+
+- **Nedostatečná derivační složka (Kd):**
+    - Derivační složka **reaguje na rychlost změny chyby** a **pomáhá tlumit oscilace a překmit**. Pokud je Kd příliš nízká, systém nebude dostatečně tlumený, což může vést k překmitům. Naopak, **příliš vysoká hodnota Kd​ může způsobit nadměrné tlumení a zpomalit odezvu systému**
+
 
 
 
