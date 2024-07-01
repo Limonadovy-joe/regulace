@@ -11,7 +11,8 @@
 - [Kladna zpetna vazba](#kladna-zpetna-vazba)
 - [Zaporna zpetna vazba](#zaporna-zpetna-vazba)
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
-- [Feed forward](#feed-forward-)
+- [Feed forward](#feed-forward)
+- [Nespojite regulatory](#nespojite-regulatory)
 
 - [Prekmit](#prekmit)
     - [Co zpusobuje prekmit](#co-zpusobuje-prekmit) 
@@ -126,6 +127,21 @@ V reálném světě průběh veličin, které jsou regulovany pomoci zpětné va
 
 ![img](https://upload.wikimedia.org/wikipedia/en/c/c7/Control_Systems.png)
 
+
+
+## Nespojite regulatory
+- Regulátor, jehož **výstupní signál neprobíhá spojitě v závislosti na vstupním signálu.**
+    - mají výstup, který může nabývat **pouze omezeného počtu hodnot**, obvykle dvou (zapnuto/vypnuto) nebo tří (např. nízký, střední, vysoký). Nejznámějším příkladem nespojitého regulátoru je **dvoustavový (on/off) regulátor.** 
+- Charakteristickou vlastností nespojitého regulátoru je to, že **akční veličina - u(t)** může nabývat pouze **omezených počtů hodnot**.
+- Nejčastěji v praxi používáme regulátory dvoupolohové. Vzácněji se používají i regulátory vícepolohové.
+- **Charakteristiky nespojitého regulátoru:**
+    - **Nelineární odezva:** **Výstup regulátoru se mění skokově, což vede k nelineární odezvě.**
+    - **Hysterze:** Často je přidána hystereze, **aby se zabránilo příliš častému přepínání mezi stavy**, což by vedlo k opotřebení mechanických částí.
+    - v termostatech nebo ve spínání topných těles 
+- Dvoupolohový regulátor se od spojitého liší tím, **že neovládá akční člen spojitě**, ale pouze jej **přestavuje do jedné ze dvou krajních mezních poloh.**
+- Regulátor je vybaven definovanou **necitlivostí** na změnu regulované veličiny v **rozmezí ± δ kolem žádané hodnoty**. **Pásmo necitlivosti je nutné proto, aby akční člen nekmital příliš rychle a často** a tím pádem se rychle neopotřeboval nebo se zničil.
+
+
 ## Prekmit
 - **overshoot**
  - dočasné překročení požadované hodnoty (referencni hodnoty) výstupní veličiny regulovaného systému **během přechodového děje**
@@ -155,28 +171,5 @@ V reálném světě průběh veličin, které jsou regulovany pomoci zpětné va
 
 - **Nedostatečná derivační složka (Kd):**
     - Derivační složka **reaguje na rychlost změny chyby** a **pomáhá tlumit oscilace a překmit**. Pokud je Kd příliš nízká, systém nebude dostatečně tlumený, což může vést k překmitům. Naopak, **příliš vysoká hodnota Kd​ může způsobit nadměrné tlumení a zpomalit odezvu systému**
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-                                                                   Teorie rizeni
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
 
 
