@@ -11,6 +11,7 @@
 - [Kladna zpetna vazba](#kladna-zpetna-vazba)
 - [Zaporna zpetna vazba](#zaporna-zpetna-vazba)
 - [Omezení zpětné vazby](#Omezení-zpětné-vazby)
+- [Feed forward](#feed-forward-)
 
 - [Prekmit](#prekmit)
     - [Co zpusobuje prekmit](#co-zpusobuje-prekmit) 
@@ -116,7 +117,14 @@ V reálném světě průběh veličin, které jsou regulovany pomoci zpětné va
   - Systém je navržen tak, aby s časem odchylku úplně eliminovat, tedy aby **aktuální hodnota veličiny konvergovala k požadované hodnotě.**
   - U kladné zpětné vazby se exponenciálně rostoucí veličina musí dříve či **později střetnout s některou z mezí systému.**
 
+## Feed forward
+- **dopredne** rizeni
+- a feedforward control system is a control system that **uses sensors to detect disturbances affecting the system** and **then applies an additional input to minimize the effect of the disturbance(sum).**
+- A control system which has only **feed-forward behavior responds to its control signal in a pre-defined way without responding to the way the system reacts**; it is in contrast with a system that also has **feedback, which adjusts the input to take account of how it affects the system**, and how the system itself may vary unpredictably.
+- In a feed-forward system, the **control variable adjustment is not error-based**. Instead it is based on knowledge about the process in the form of a mathematical model of the process and knowledge about, or measurements of, the process disturbances
 
+
+![img](https://upload.wikimedia.org/wikipedia/en/c/c7/Control_Systems.png)
 
 ## Prekmit
 - **overshoot**
